@@ -1,0 +1,9 @@
+langchain>=1.2.0
+langchain-openai>=1.1.0
+langgraph>=1.1.0
+langgraph-checkpoint-sqlite>=3.0.0
+pydantic>=2.12.0
+pydantic-settings>=2.13.0
+ddgs>=7.0
+lxml-html-clean>=0.4.4
+trafilatura>=2.0.0
