@@ -1,3 +1,5 @@
+import time
+
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.sqlite import SqliteSaver
 
@@ -52,7 +54,17 @@ def main():
 
             last_message = new_state["messages"][-1]
 
-            print(f"---> Agent message:\n{last_message.content}\n\n\n")
+            text = last_message.content
+
+            print("---> Agent message:\n", end="", flush=True)
+
+            for i in range(0, len(text), 4):
+
+                print(text[i:i+4], end="", flush=True)
+
+                time.sleep(0.05)
+
+            print("\n\n\n")
 
 
 
